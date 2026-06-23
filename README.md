@@ -212,8 +212,43 @@ All modules use Python's `logging` module (no `print()` statements in the core p
 `random_state=42` is used consistently across the train/test split and every model that accepts a random seed, ensuring that pipeline runs are deterministic given the same input data.
 
 ---
+## Results
+
+The pipeline trained and compared three machine learning models on 96,088 patient records containing 230 binary symptom features and 100 disease classes.
+
+| Model               |   Accuracy | Weighted F1 Score |    ROC-AUC |
+| ------------------- | ---------: | ----------------: | ---------: |
+| Logistic Regression | **89.80%** |        **89.87%** | **0.9996** |
+| Random Forest       |     87.00% |            87.01% |     0.9980 |
+| XGBoost             |     86.99% |            87.02% |     0.9993 |
+
+### Best Model
+
+**Logistic Regression**
+
+* Accuracy: **89.80%**
+* Weighted F1-score: **89.87%**
+* ROC-AUC (OvR): **0.9996**
+
+The best model is automatically selected based on the highest weighted F1-score and saved for future inference.
+
+## Future Improvements
+
+* Hyperparameter optimization using Optuna
+* Ensemble learning techniques
+* Explainable AI using SHAP
+* Streamlit-based web application
+* Docker containerization
+* REST API deployment using FastAPI
+* Integration with electronic health record systems
+* Disease recommendation dashboard
 
 ## Author
 
-Vignesh — 2nd-year AIML student, Jain University
-CodeAlpha Machine Learning Internship — Final Project
+**Vignesh R**
+2nd-Year B.Tech Artificial Intelligence & Machine Learning Student
+Jain University, Bengaluru
+
+Final Project — CodeAlpha Machine Learning Internship
+
+GitHub: https://github.com/Vigneshrethinaswamy
