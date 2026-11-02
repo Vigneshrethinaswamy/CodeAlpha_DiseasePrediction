@@ -1,6 +1,6 @@
-# CodeAlpha_DiseasePrediction
+# Disease Prediction System
 
-A production-quality, end-to-end machine learning pipeline for **multi-class disease prediction from binary symptom data**, built as the final project of the CodeAlpha Machine Learning Internship.
+An end-to-end machine learning pipeline for **multi-class disease prediction from binary symptom data**.
 
 Given a set of reported symptoms, the system predicts the most likely disease (out of 100 possible classes) along with a confidence score, by comparing three classical ML algorithms and automatically selecting the best performer.
 
@@ -23,7 +23,7 @@ Given a set of reported symptoms, the system predicts the most likely disease (o
 ## Folder Structure
 
 ```
-CodeAlpha_DiseasePrediction/
+Disease-Prediction-System/
 │
 ├── data/
 │   ├── raw/                 # Place Diseases_and_Symptoms_dataset.csv here
