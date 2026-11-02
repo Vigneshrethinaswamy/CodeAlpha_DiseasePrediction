@@ -214,7 +214,7 @@ All modules use Python's `logging` module (no `print()` statements in the core p
 ---
 ## Results
 
-The pipeline trained and compared three machine learning models on 96,088 patient records containing 230 binary symptom features and 100 disease classes.
+The repository documents the following results for a run on 96,088 patient records containing 230 binary symptom features and 100 disease classes. The dataset and trained artifacts are not committed, so these figures cannot currently be independently reproduced from the repository alone. Treat them as recorded project results, not as a verified benchmark on an externally validated clinical dataset.
 
 | Model               |   Accuracy | Weighted F1 Score |    ROC-AUC |
 | ------------------- | ---------: | ----------------: | ---------: |
@@ -232,21 +232,22 @@ The pipeline trained and compared three machine learning models on 96,088 patien
 
 The best model is automatically selected based on the highest weighted F1-score and saved for future inference.
 
-## Future Improvements
+## Scope and limitations
 
-* Hyperparameter optimization using Optuna
-* Ensemble learning techniques
-* Explainable AI using SHAP
-* Streamlit-based web application
-* Docker containerization
-* REST API deployment using FastAPI
-* Integration with electronic health record systems
-* Disease recommendation dashboard
+* This is a machine-learning exercise on a symptom-to-disease dataset, not a clinically validated diagnostic tool.
+* Dataset provenance, licensing, and external validation should be established before making real-world claims.
+* The reported metrics depend on the dataset's label quality and split; high ROC-AUC alone does not establish clinical usefulness.
+
+## Potential extensions
+
+* Hyperparameter optimization and explainability
+* A user interface with clear uncertainty and safety messaging
+* External validation on a separately sourced dataset
 
 ## Author
 
 **Vignesh R**
-2nd-Year B.Tech Artificial Intelligence & Machine Learning Student
+B.Tech Artificial Intelligence & Machine Learning Student
 Jain University, Bengaluru
 
 
