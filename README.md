@@ -249,6 +249,5 @@ The best model is automatically selected based on the highest weighted F1-score 
 2nd-Year B.Tech Artificial Intelligence & Machine Learning Student
 Jain University, Bengaluru
 
-Final Project — CodeAlpha Machine Learning Internship
 
 GitHub: https://github.com/Vigneshrethinaswamy
